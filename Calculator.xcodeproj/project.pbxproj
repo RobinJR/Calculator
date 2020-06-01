@@ -16,6 +16,7 @@
 		56E115522485149400F07E97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E115502485149400F07E97 /* Main.storyboard */; };
 		56E115542485149800F07E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E115532485149800F07E97 /* Assets.xcassets */; };
 		56E115572485149800F07E97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E115552485149800F07E97 /* LaunchScreen.storyboard */; };
+		56E1155D2485229F00F07E97 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E1155C2485229F00F07E97 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		56E115532485149800F07E97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56E115562485149800F07E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56E115582485149800F07E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E1155C2485229F00F07E97 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				56E1152D2485133800F07E97 /* Calculator.h */,
 				56E1152E2485133800F07E97 /* Info.plist */,
+				56E1155C2485229F00F07E97 /* Calculator.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					56E115292485133800F07E97 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 					56E115322485133800F07E97 = {
 						CreatedOnToolsVersion = 11.2;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E1155D2485229F00F07E97 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		56E1153F2485133800F07E97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SU635A24M4;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Robin.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		56E115402485133800F07E97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SU635A24M4;
@@ -485,6 +493,7 @@
 		56E115422485133800F07E97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SU635A24M4;
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
@@ -503,6 +512,7 @@
 		56E115432485133800F07E97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SU635A24M4;
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
